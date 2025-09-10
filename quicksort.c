@@ -18,6 +18,9 @@ int partition(int *array, int low, int high) {
     return i - 1;
 }
 
+//[4,5,3,6,2,1]
+//[1,3,2,4,5,6]
+
 void quicksort_first(int *array, int low, int high, long long *comparisons) {
     if (low >= high) return;
     *comparisons += (high - low);                 // m-1
